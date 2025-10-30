@@ -49,10 +49,10 @@
     @media (max-width:420px){
       .wrap{padding:36px 18px}
       .btn{font-size:18px;padding:16px 18px}
+      .ad-container iframe{width:100% !important;height:auto !important;}
     }
 
     .icon svg{display:block}
-
     .bg-fade{position:fixed;inset:0;background:rgba(255,255,255,0.02);pointer-events:none}
   </style>
 </head>
@@ -73,13 +73,13 @@
     </a>
 
     <!-- 🔹 Iklan Banner di bawah Tombol 1 -->
-    <div style="margin-top:20px; text-align:center;">
+    <div class="ad-container" style="margin-top:18px; text-align:center;">
       <script type="text/javascript">
         atOptions = {
           'key' : '94fc4e1fa54ae93a74566a054c388c02',
           'format' : 'iframe',
           'height' : 60,
-          'width' : 468,
+          'width' : 320, /* disesuaikan agar pas di layar HP */
           'params' : {}
         };
       </script>
@@ -96,17 +96,17 @@
           <path d="M5 3.868V20.132C5 21.052 6.004 21.553 6.749 21.043L20.02 12.911C20.743 12.414 20.743 11.586 20.02 11.089L6.749 2.957C6.004 2.447 5 2.948 5 3.868Z" fill="white"/>
         </svg>
       </span>
-      <span>Tap to View </span>
+      <span>Tap to View</span>
     </a>
 
     <!-- 🔹 Iklan Banner di bawah Tombol 2 -->
-    <div style="margin-top:20px; text-align:center;">
+    <div class="ad-container" style="margin-top:18px; text-align:center;">
       <script type="text/javascript">
         atOptions = {
           'key' : 'ec53827c9b81b0b08ea2bc7d1d014857',
           'format' : 'iframe',
           'height' : 90,
-          'width' : 728,
+          'width' : 336, /* ukuran pas untuk tampilan mobile */
           'params' : {}
         };
       </script>
