@@ -26,7 +26,7 @@
       display:flex;align-items:center;justify-content:center;
     }
 
-    .wrap{width:100%;max-width:420px;padding:40px 20px;box-sizing:border-box;text-align:center}
+    .wrap{width:100%;max-width:760px;padding:40px 20px;box-sizing:border-box;text-align:center}
 
     .spacer{height:48px}
 
@@ -37,7 +37,8 @@
       font-weight:600;font-size:20px;
       box-shadow:0 8px 20px rgba(0,0,0,0.12);
       border:0;cursor:pointer;user-select:none;overflow:hidden;
-      width:100%;box-sizing:border-box;
+      width:100%;max-width:420px;margin:0 auto;
+      box-sizing:border-box;
     }
 
     .btn .icon{
@@ -50,11 +51,18 @@
     .btn.shake{animation:shakeX 0.38s linear infinite}
 
     .ad-container{margin-top:18px;text-align:center}
-    .ad-container iframe{width:100% !important;max-width:420px !important;height:auto !important;border:0;display:block;margin:0 auto;}
+    .ad-container iframe{
+      width:100% !important;
+      height:auto !important;
+      border:0;
+      display:block;
+      margin:0 auto;
+    }
 
-    @media (max-width:420px){
+    @media (max-width:768px){
       .wrap{padding:30px 16px}
       .btn{font-size:18px;padding:16px 18px}
+      .ad-container iframe{max-width:100% !important;}
     }
 
     .bg-fade{position:fixed;inset:0;background:rgba(255,255,255,0.02);pointer-events:none}
@@ -64,20 +72,6 @@
   <div class="bg-fade"></div>
 
   <div class="wrap" role="main">
-
-    <!-- 🔹 Iklan Banner 1 -->
-    <div class="ad-container">
-      <script type="text/javascript">
-        atOptions = {
-          'key' : '94fc4e1fa54ae93a74566a054c388c02',
-          'format' : 'iframe',
-          'height' : 60,
-          'width' : 420,
-          'params' : {}
-        };
-      </script>
-      <script type="text/javascript" src="//www.highperformanceformat.com/94fc4e1fa54ae93a74566a054c388c02/invoke.js"></script>
-    </div>
 
     <!-- 🔹 Tombol 1 -->
     <a class="btn shake" id="btn1" href="https://www.effectivegatecpm.com/wkj2qmku?key=469be1ba075a153196aae2fe5b0810c7" target="_blank" rel="noopener noreferrer" style="margin-top:18px;">
@@ -102,18 +96,32 @@
       <span>Tap to View</span>
     </a>
 
-    <!-- 🔹 Iklan Banner 2 -->
+    <!-- 🔹 Iklan Banner 2 (728x90) -->
     <div class="ad-container" style="margin-top:18px;">
       <script type="text/javascript">
         atOptions = {
           'key' : 'ec53827c9b81b0b08ea2bc7d1d014857',
           'format' : 'iframe',
           'height' : 90,
-          'width' : 420,
+          'width' : 728,
           'params' : {}
         };
       </script>
       <script type="text/javascript" src="//www.highperformanceformat.com/ec53827c9b81b0b08ea2bc7d1d014857/invoke.js"></script>
+    </div>
+
+    <!-- 🔹 Iklan Banner 1 (468x60) -->
+    <div class="ad-container" style="margin-top:18px;">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : '94fc4e1fa54ae93a74566a054c388c02',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/94fc4e1fa54ae93a74566a054c388c02/invoke.js"></script>
     </div>
 
   </div>
@@ -132,4 +140,4 @@
   <!-- ✅ Iklan Social Bar Melayang -->
   <script data-cfasync="false" type="text/javascript" src="//pl27835564.effectivegatecpm.com/02/db/a6/02dba6e85764a446e8a4c32a16c42894.js"></script>
 </body>
-        </html>
+</html>
